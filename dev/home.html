@@ -244,19 +244,22 @@ $('#toc').on('click', 'a', function() {
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-The content above appears in all editions, but some of it is variable.
+<div class="paragraph">
+<p>The content above appears in all editions, but some of it is variable.
 Many of the strings (e.g., <em>ACMEdoc</em> and even <em>extend and customize</em>, etc) are variables (<code>{portal_product}</code> and <code>{user_verb}</code>) are dynamically substituted with AsciiDoc attributes at build time.
+The content is included from a common file, like so:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc"> include::includes/intro_portal_common.adoc[]</code></pre>
+</div>
+</div>
 </td>
 </tr>
 </table>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="developer-portal-intro">Developer Portal Intro</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>As a developer, you will have access to a sandboxed version of the product for configured for development and testing.
+<p>As a <strong>developer</strong>, you will have access to a sandboxed version of the product for configured for development and testing.
 Your Guide includes documentation of all Basic and Premium features as well as information required to extend the product.</p>
 </div>
 <div class="admonitionblock tip">
@@ -273,6 +276,9 @@ Your Guide includes documentation of all Basic and Premium features as well as i
 <div class="content">
 <pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc"> include::portal/intro_portal_{portal_slug}.adoc[]</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Where <code>{portal_slug}</code> is a variable defined in a block of a YAML file (<code>_configs/portals.yml</code>) that is only passed to one designated portal during the build config file (<code>_configs/build-docs.yml</code>), designated in the build config file as <code>data: _data/portals.yml:portal-3</code>.</p>
 </div>
 </td>
 </tr>
