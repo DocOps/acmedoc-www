@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -91,7 +92,7 @@
             });
         });
     </script>
-
+    
 
 </head>
 <body>
@@ -116,11 +117,11 @@
 
 
 
-
+                
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
-
-
+                
+                
 			<li>
 
 
@@ -129,7 +130,7 @@
 
 </li>
 
-
+		
                 <!--comment out this block if you want to hide search-->
                 <li>
                     <!--start search-->
@@ -162,15 +163,15 @@
   <div id="main">
     <!-- Content Row -->
     <div class="row">
-
-
+        
+        
             <!-- Sidebar Column -->
             <div class="col-md-3" id="tg-sb-sidebar">
-
+                
 
 <ul id="mysidebar" class="nav">
   <li class="sidebarTitle"> </li>
-
+  
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
@@ -182,22 +183,23 @@
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
             </div>
-
-
+            
+        
 
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
+   <h1 class="post-title-main">ACMEdoc Basic User Guide</h1>
 </div>
 
 
 
 <div class="post-content">
 
+   
 
-
-
-
+    
+    
 <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
 <script>
 $( document ).ready(function() {
@@ -213,71 +215,118 @@ $('#toc').on('click', 'a', function() {
   $(window).scrollTop(scroll_target - 10);
   return false
 })
-
+  
 });
 </script>
 
 <div id="toc"></div>
 
+    
 
 
+    
 
 
-
-
-
+    
 
   <div id="preamble">
 <div class="sectionbody">
+<div class="paragraph">
+<p>Welcome to the ACMEdoc Basic User Guide!</p>
+</div>
+<div class="paragraph">
+<p>Here you will learn to develop and manage great docs with ACMEdoc Basic as a user.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The content above appears in all editions, but some of it is variable.
+Many of the strings (e.g., <em>ACMEdoc Basic</em> and even <em>develop and manage great docs with</em>, etc) are variables (<code>{portal_product}</code> and <code>{user_verb}</code>) are dynamically substituted with AsciiDoc attributes at build time.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="introduction-to-the-standard-package">Introduction to the Standard Package</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Our standard offering is pretty simple, quite by design.
+It has some feature limitations that we&#8217;ll tease you with throughout this manual, but there&#8217;s still quite a bit you can do with it.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The above text is from by a dynamically included file using:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-asciidoc" data-lang="asciidoc"> include::portal/intro_portal_{portal_slug}.adoc[]</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+This document contains lots of jargon.
+See the <a href="jargon-guide.html">Jargon Guide</a> if you get lost.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Copyright &#169; 2018 ACMEdocOps Collective</p>
+</div>
+</div>
+</div>
 
-<h1>ACMEdoc Documentation</h2>
-
-We offer the following distinct portals to our beloved users:
-
-<p><a href="basic/home">Basic Portal</a> (<a href="docs/basic-guide.pdf">PDF Manual</a>)
-
-<p><a href="fab/home">Fabulous Portal</a> (<a href="docs/fabulous-guide.pdf">PDF Manual</a>)
-
-<p><a href="dev/home">Developer Portal</a> (<a href="docs/dev-guide.pdf">PDF Manual</a>)
-
-
-
-  <div class="paragraph">
-  <p>Copyright &#169; 2018 ACMEdocOps Collective</p>
-  </div>
-  </div>
-  </div>
-
-      <div class="tags">
-
-      </div>
+    <div class="tags">
+        
+    </div>
 
 
 
 
-  </div>
+</div>
 
 
 
-  <footer>
-              <div class="row">
-                  <div class="col-lg-12 footer">
-                 &copy;2018 . All rights reserved. <br />
-   Site last generated: Feb 9, 2018 <br />
-  <p><img src="../assets/images/company_logo.png" alt="Company logo"/></p>
-                  </div>
-              </div>
-  </footer>
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2018 . All rights reserved. <br />
+ Site last generated: Feb 11, 2018 <br />
+<p><img src="../assets/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
 
 
-          </div>
-      <!-- /.row -->
-  </div>
-  <!-- /.container -->
-  </div>
-  <!-- /#main -->
-      </div>
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
 
-  </body>
+</body>
 
-  </html>
+</html>

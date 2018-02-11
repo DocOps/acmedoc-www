@@ -1,0 +1,5 @@
+= ACMEdoc WWW
+
+This repository is a temporary home for the ACMEdoc demo site.
+
+Source files at link:https://github.com/DocOps/acmedoc-poc[ACMEdoc Proof of Concept repo].
