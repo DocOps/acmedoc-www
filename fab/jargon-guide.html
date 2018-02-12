@@ -264,6 +264,46 @@ This is just to show the power of storing data in flat files reusable throughout
 </dd>
 </dl>
 </div>
+<div id="glossary-sourcing" class="sidebarblock">
+<div class="content">
+<div class="title">How this glossary was sourced</div>
+<div class="paragraph">
+<p>The contents of this appendix were drawn from a semi-structured “small data” file (<code>_data/terms.yml</code>), which looks a little something like this:</p>
+</div>
+<div class="listingblock">
+<div class="title">terms.yml</div>
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">- term: Asciidoctor
+  def: Suite of open source tools used to process AsciiDoc markup into various rendered output formats.
+  ref: http://asciidoctor.org
+- term: build
+  def: The (usually automated) series of actions necessary to compile and package software or documentation.
+  aliases: [build procedure]
+- term: Liquid
+  def: Open source templating markup language maintained by Shopify
+  ref: https://help.shopify.com/themes/liquid</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This data is combined with the template at <code>_templates/liquid/terms.asciidoc</code> to build an AsciiDoc formatted file (<code>build/includes/built/terms.adoc</code>).</p>
+</div>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="title">GETTING META!</div>
+You wanna know what&#8217;s really friggin cool?
+The example YAML snippet above is drawn directly from the <em>actual file</em> at build time.
+That means the above will always display the exact, actual content of the YAML it is referencing.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 
