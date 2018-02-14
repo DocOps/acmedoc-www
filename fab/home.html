@@ -118,19 +118,68 @@
 
 
                 
+                
+                
+                <li><a href="http://DocOps.github.io/acmedoc-poc" target="_blank">GitHub</a></li>
+                
+                
+                
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
                 
                 
-			<li>
-
-
-
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the ACMEdoc Fab User Guide page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
-
-</li>
-
-		
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">External Help<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/tomjoht/documentation-theme-jekyll" target="_blank">Jekyll Documentation Theme</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/briandominick/liquidoc-gem" target="_blank">LiquiDoc</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/DocOps/liquidoc-cmf" target="_blank">LiquiDoc CMF</a></li>
+                        
+                        
+                        
+                        <li><a href="http://asciidoctor.org/docs/user-manual/" target="_blank">Asciidoctor User Manual</a></li>
+                        
+                        
+                        
+                        <li><a href="https://jekyllrb.com/docs/home/" target="_blank">Jekyll Docs</a></li>
+                        
+                        
+                        
+                        <li><a href="https://shopify.github.io/liquid/" target="_blank">Shopify Liquid Docs</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ACMEdoc Portals<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="../basic/home" target="_blank">Basic Portal</a></li>
+                        
+                        
+                        
+                        <li><a href="../fab/home" target="_blank">Fabulous Portal</a></li>
+                        
+                        
+                        
+                        <li><a href="../dev/home" target="_blank">Developer Portal</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
                 <!--comment out this block if you want to hide search-->
                 <li>
                     <!--start search-->
@@ -138,7 +187,7 @@
                         <input type="text" id="search-input" placeholder="">
                         <ul id="results-container"></ul>
                     </div>
-                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script src="../theme/js/jekyll-search.js" type="text/javascript"></script>
                     <script type="text/javascript">
                             SimpleJekyllSearch.init({
                                 searchInput: document.getElementById('search-input'),
@@ -169,9 +218,56 @@
             <div class="col-md-3" id="tg-sb-sidebar">
                 
 
+
 <ul id="mysidebar" class="nav">
   <li class="sidebarTitle"> </li>
   
+  
+  
+  <li>
+      <a href="#">Pages</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a href="home">Home</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="product-overview">Overview</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="framework-structure">Framework Structure</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="jargon-guide">Jargon Guide</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="notice">NOTICE</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
@@ -312,13 +408,13 @@ See the <a href="jargon-guide.html">Jargon Guide</a> if you get lost.
 
 </div>
 
-
+<hr class="shaded"/>
 
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-               &copy;2018 . All rights reserved. <br />
- Site last generated: Feb 11, 2018 <br />
+               &copy;2018 ACMEdocOps Collective. All rights reserved. <br />
+ Site last generated: Feb 13, 2018 <br />
 <p><img src="../assets/images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
